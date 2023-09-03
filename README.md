@@ -1,4 +1,5 @@
-# Statistics-Notes-Krish-Naik
+
+# <p align="center">Statistics-Notes-Krish-Naik</p>
 
 
 ![](https://github.com/praj2408/Statistics-Notes-Krish-Naik/blob/main/Statistics%20Notes/1.jpg)
