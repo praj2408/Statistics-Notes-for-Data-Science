@@ -100,3 +100,8 @@ These topics provide a solid foundation in statistics for data science. Dependin
 ![](https://github.com/praj2408/Statistics-Notes-Krish-Naik/blob/main/Statistics%20Notes/2023_09_04%201_43%20am%20Office%20Lens%20(5).jpg)
 
 ![](https://github.com/praj2408/Statistics-Notes-Krish-Naik/blob/main/Statistics%20Notes/2023_09_04%201_43%20am%20Office%20Lens%20(6).jpg)
+
+![](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/blob/main/Statistics%20Notes/2023_09_28%204_16%20pm%20Office%20Lens.jpg)
+![](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/blob/main/Statistics%20Notes/2023_09_28%204_17%20pm%20Office%20Lens.jpg)
+![](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/blob/main/Statistics%20Notes/2023_09_28%204_17%20pm%20Office%20Lens%20(1).jpg)
+
