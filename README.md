@@ -112,5 +112,7 @@ These topics provide a solid foundation in statistics for data science. Dependin
 ![](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/blob/main/Statistics%20Notes/1695924116531.jpg)
 ![](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/blob/main/Statistics%20Notes/1695924116521.jpg)
 
-
-
+![](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/blob/main/Statistics%20Notes/1696045189642.jpg)
+![](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/blob/main/Statistics%20Notes/1696045189637.jpg)
+![](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/blob/main/Statistics%20Notes/1696045189632.jpg)
+![](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/blob/main/Statistics%20Notes/1696045189629.jpg)
