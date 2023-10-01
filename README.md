@@ -1,5 +1,5 @@
 ### Statistics plays a crucial role in data science, as it provides the foundation for understanding and drawing insights from data. Here are some key topics you should learn in statistics for data science:
-
+ 
 1. **Descriptive Statistics**:  
    - Measures of central tendency (mean, median, mode)
    - Measures of variability (variance, standard deviation, range)
