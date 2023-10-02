@@ -7,7 +7,7 @@
    - Skewness and kurtosis
    - Data visualization (histograms, box plots, scatter plots)
 
-2. **Probability**:
+2. **Probability**:  
    - Basic probability concepts
    - Probability distributions (e.g., normal, binomial, Poisson)
    - Conditional probability and Bayes' theorem
