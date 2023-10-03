@@ -5,7 +5,7 @@
    - Measures of variability (variance, standard deviation, range)
    - Percentiles and quartiles
    - Skewness and kurtosis
-   - Data visualization (histograms, box plots, scatter plots)
+   - Data visualization (histograms, box plots, scatter plots)  
 
 2. **Probability**:  
    - Basic probability concepts
