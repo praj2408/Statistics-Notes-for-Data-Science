@@ -1,6 +1,6 @@
 
 
-Statistics-Notes-For-Data-Science
+# Statistics-Notes-For-Data-Science
 
 
 ![](https://github.com/praj2408/Statistics-Notes-Krish-Naik/blob/main/Statistics%20Notes/1.jpg)
