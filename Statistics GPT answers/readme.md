@@ -279,39 +279,284 @@ These probability distributions have different shapes, parameters, and applicati
 
 
 
+# Inferential Statistics
+
+## 1. Hypothesis Testing
+
+Hypothesis testing is a statistical method used to make inferences about a population parameter based on sample data. It involves evaluating two competing hypotheses: the null hypothesis (H0) and the alternative hypothesis (H1). The goal of hypothesis testing is to determine whether there is enough evidence to reject the null hypothesis in favor of the alternative hypothesis.
+
+Here's an overview of the steps involved in hypothesis testing:
+
+1. **Formulate Hypotheses:**
+   - The null hypothesis (H0) represents the status quo or the assumption being tested. It typically states that there is no effect, no difference, or no relationship in the population.
+   - The alternative hypothesis (H1) represents the claim or the hypothesis that researchers are trying to support. It can be one-sided (e.g., greater than, less than) or two-sided (e.g., not equal to).
+
+2. **Select Significance Level (α):**
+   - The significance level (α) is the probability of rejecting the null hypothesis when it is actually true. It is typically set at 0.05 (5%) or 0.01 (1%), but it can vary depending on the study and the level of certainty required.
+
+3. **Choose a Test Statistic:**
+   - The choice of test statistic depends on the type of data being analyzed and the research question. Common test statistics include the t-statistic, z-statistic, chi-square statistic, and F-statistic.
+
+4. **Collect and Analyze Data:**
+   - Collect a sample from the population of interest and calculate the value of the test statistic using the sample data.
+
+5. **Calculate P-value:**
+   - The p-value is the probability of observing a test statistic as extreme as, or more extreme than, the one calculated from the sample data, assuming that the null hypothesis is true. A smaller p-value indicates stronger evidence against the null hypothesis.
+
+6. **Make a Decision:**
+   - Compare the p-value to the significance level (α).
+   - If the p-value is less than or equal to α, reject the null hypothesis and conclude that there is sufficient evidence to support the alternative hypothesis.
+   - If the p-value is greater than α, fail to reject the null hypothesis, indicating that there is not enough evidence to support the alternative hypothesis.
+
+7. **Draw Conclusions:**
+   - Interpret the results of the hypothesis test in the context of the research question and make conclusions about the population parameter of interest.
+
+Hypothesis testing is a powerful tool for making evidence-based decisions and drawing conclusions from data. It is widely used in scientific research, quality control, business analytics, and many other fields.
+
+
+
+## Example
+Let's walk through a hypothesis test with a step-by-step example involving a hypothetical scenario. Suppose we want to test whether a new weight loss program is effective in helping individuals lose weight. 
+
+Here are the details of the example:
+
+- **Null Hypothesis (H0):** The new weight loss program has no effect, and the mean weight loss after 8 weeks is zero (μ = 0).
+- **Alternative Hypothesis (H1):** The new weight loss program is effective, and the mean weight loss after 8 weeks is greater than zero (μ > 0).
+- **Significance Level (α):** We'll use a significance level of α = 0.05.
+
+Let's say we conducted a study with a sample of 30 individuals who followed the weight loss program for 8 weeks. After collecting data, we found that the sample mean weight loss was 4.5 pounds, with a sample standard deviation of 2.0 pounds.
+
+Now, let's perform the hypothesis test step by step:
+
+1. **Formulate Hypotheses:**
+   - Null Hypothesis (H0): μ = 0
+   - Alternative Hypothesis (H1): μ > 0
+
+2. **Select Significance Level (α):** α = 0.05
+
+3. **Choose a Test Statistic:**
+   - Since we're dealing with the mean weight loss from a sample (which follows a normal distribution due to the Central Limit Theorem), we'll use a one-sample t-test.
+
+4. **Collect and Analyze Data:**
+   - Sample size (n) = 30
+   - Sample mean (x̄) = 4.5 pounds
+   - Sample standard deviation (s) = 2.0 pounds
+
+
+![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/5996dbee-8357-4659-bf7a-06f3282e9ec7)
+
+
+6. **Calculate P-value:**
+   - We need to find the probability of observing a t-statistic as extreme as 16.43 or more extreme under the null hypothesis.
+   - Since the alternative hypothesis is one-sided (μ > 0), we'll look for the p-value in the upper tail of the t-distribution.
+
+7. **Make a Decision:**
+   - Using statistical software or a t-table, we find that the p-value is very close to 0 (much less than 0.05).
+   - Since the p-value is less than the significance level (α = 0.05), we reject the null hypothesis.
+
+8. **Draw Conclusions:**
+   - We conclude that there is sufficient evidence to support the alternative hypothesis.
+   - Therefore, we can say that the new weight loss program is effective in helping individuals lose weight.
+
+In this example, we used a one-sample t-test to compare the sample mean weight loss to the null hypothesis value of zero. The calculated t-statistic was very large, leading to a very small p-value. This provided strong evidence to reject the null hypothesis in favor of the alternative hypothesis, indicating that the weight loss program is effective.
+
+
+
+## Types of test statistic
+Certainly! Each of these statistics is used in hypothesis testing and statistical analysis, but they are applied in different contexts and have different distributions. Here's an explanation of each:
+
+1. **T-Statistic (Student's t-Statistic):**
+   - The t-statistic is a measure of the difference between the sample mean and the population mean, relative to the variability in the sample.
+   - It is commonly used when the sample size is small (typically less than 30) and the population standard deviation is unknown.
+   - The formula for the t-statistic is:
+     ![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/740fdf1b-a11a-433a-ac1a-36b6d8ae4552)
+
+     where:
+     - \(\bar{x}\) is the sample mean,
+     - \(\mu\) is the population mean under the null hypothesis,
+     - \(s\) is the sample standard deviation, and
+     - \(n\) is the sample size.
+   - The t-statistic follows a t-distribution, which is similar to a normal distribution but has heavier tails. The shape of the t-distribution depends on the sample size.
+
+2. **Z-Statistic (Z-Score):**
+   - The z-statistic is a measure of how many standard deviations a data point is from the mean of a distribution.
+   - It is used when the population standard deviation is known and the sample size is large (typically greater than 30).
+   - The formula for the z-statistic is:
+   
+     ![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/3f16722e-9e6c-4033-8f21-7710ef915a44)
+
+     where:
+     - \(x\) is the data point,
+     - \(\mu\) is the population mean,
+     - \(\sigma\) is the population standard deviation.
+   - The z-statistic follows a standard normal distribution (mean = 0, standard deviation = 1).
+
+3. **Chi-Square Statistic:**
+   - The chi-square statistic is used to test hypotheses about the distribution of categorical data.
+   - It measures the difference between observed frequencies and expected frequencies under the null hypothesis.
+   - The formula for the chi-square statistic depends on the type of data being analyzed (e.g., goodness-of-fit test, test of independence).
+   - The chi-square statistic follows a chi-square distribution, which is a family of distributions with different degrees of freedom.
+
+4. **F-Statistic (F-Ratio):**
+   - The F-statistic is used in analysis of variance (ANOVA) and regression analysis to test hypotheses about variances or ratios of variances.
+   - In ANOVA, the F-statistic measures the ratio of the variance between groups to the variance within groups.
+   - In regression analysis, the F-statistic tests the overall significance of the regression model.
+   - The F-statistic follows an F-distribution, which is a family of distributions with two degrees of freedom parameters (numerator and denominator degrees of freedom).
+
+These statistics play important roles in hypothesis testing, estimation, and statistical inference across various fields of study. Understanding their properties and applications is essential for conducting rigorous statistical analyses and interpreting the results accurately.
+
+
+
+## Confidence Interval
+
+Confidence intervals are a range of values calculated from sample data that is likely to contain the true population parameter with a certain level of confidence. They provide a measure of the uncertainty or precision associated with an estimate.
+
+Here's an explanation of confidence intervals:
+
+1. **Construction of Confidence Intervals:**
+   - Confidence intervals are constructed using a point estimate from the sample data (e.g., sample mean, sample proportion) and a margin of error.
+   - The margin of error is based on the variability of the sample data and the desired level of confidence.
+   - The formula for constructing a confidence interval depends on the parameter of interest (e.g., population mean, population proportion) and the distribution of the sample statistic.
+
+2. **Interpretation of Confidence Intervals:**
+   - A confidence interval provides a range of plausible values for the population parameter.
+   - The level of confidence (often expressed as a percentage, such as 95% or 99%) indicates the proportion of confidence intervals that would contain the true population parameter if the sampling process were repeated many times.
+   - For example, a 95% confidence interval means that if we were to take 100 different samples and compute a confidence interval for each sample, then approximately 95 of those intervals would contain the true population parameter.
+
+3. **Factors Affecting Width of Confidence Intervals:**
+   - The width of a confidence interval depends on several factors, including:
+     - Sample size: Larger samples tend to result in narrower confidence intervals, as they provide more precise estimates.
+     - Variability of the data: Greater variability in the sample data leads to wider confidence intervals.
+     - Level of confidence: Higher levels of confidence require wider intervals to capture a greater proportion of potential sample means or proportions.
+
+4. **Example: Confidence Interval for Population Mean:**
+   - Suppose we want to estimate the average height of adult males in a city. We collect a random sample of 100 adult males and calculate the sample mean height to be 70 inches, with a standard deviation of 3 inches.
+   - To construct a 95% confidence interval for the population mean height, we use the formula:
+     ![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/f90d8af1-5c2a-4e26-9040-a74a2177dcac)
+
+     where \(\bar{x}\) is the sample mean, \(s\) is the sample standard deviation, \(n\) is the sample size, and \(z\) is the z-score corresponding to the desired level of confidence.
+   - We look up the z-score for a 95% confidence level (usually 1.96 for large samples) and calculate the confidence interval:
+     ![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/b9545f63-d84c-4dcd-9753-9a349bda1eb5)
+
+     This gives us a confidence interval of \( (69.412, 70.588) \) inches, meaning we are 95% confident that the true population mean height falls within this range.
+
+Confidence intervals are widely used in inferential statistics to estimate population parameters and assess the precision of sample estimates. They provide valuable information about the reliability of statistical estimates and help researchers draw valid conclusions from sample data.
+
+
+
+## Analysis of Variance (ANOVA)
+
+
+Analysis of Variance (ANOVA) is a statistical method used to compare the means of three or more groups to determine if there are statistically significant differences between them. ANOVA tests the null hypothesis that the means of all groups are equal against the alternative hypothesis that at least one group mean is different from the others.
+
+Here's an overview of ANOVA:
+
+1. **Types of ANOVA:**
+   - One-Way ANOVA: Compares the means of three or more independent groups on one independent variable (factor).
+   - Two-Way ANOVA: Extends the analysis to two independent variables (factors) to examine their main effects and interaction effect on the dependent variable.
+   - Factorial ANOVA: An extension of Two-Way ANOVA that allows for multiple levels of each independent variable.
+
+2. **Assumptions of ANOVA:**
+   - Independence: Observations within each group must be independent of each other.
+   - Normality: The data within each group should follow a normal distribution.
+   - Homogeneity of Variances: The variances of the groups should be approximately equal.
+   - Random Sampling: The data should be collected using random sampling techniques.
+
+3. **Hypotheses of ANOVA:**
+   - Null Hypothesis (H0): The means of all groups are equal.
+   - Alternative Hypothesis (H1): At least one group mean is different from the others.
+
+4. **F-Statistic:**
+   - ANOVA calculates the F-statistic, which is the ratio of the between-group variability to the within-group variability.
+   - If the F-statistic is sufficiently large (compared to a critical value from the F-distribution), we reject the null hypothesis in favor of the alternative, concluding that there are significant differences between the group means.
+
+5. **Post-Hoc Tests:**
+   - If ANOVA indicates significant differences between group means, post-hoc tests (e.g., Tukey's HSD, Bonferroni, Scheffé) can be conducted to identify which specific groups differ from each other.
+   - Post-hoc tests help avoid Type I errors (incorrectly rejecting the null hypothesis) when conducting multiple pairwise comparisons.
+
+6. **Effect Size:**
+   - ANOVA provides measures of effect size, such as eta-squared (η²) or partial eta-squared (η²), which quantify the proportion of variance in the dependent variable explained by the independent variable(s).
+   - Effect size measures help interpret the practical significance of the observed differences between group means.
+
+7. **Interpretation:**
+   - If ANOVA results in a significant F-statistic, we conclude that there are differences between group means.
+   - Post-hoc tests identify which specific groups differ significantly.
+   - Effect size measures provide information about the magnitude of the observed differences.
+
+ANOVA is commonly used in experimental and observational research to analyze data with multiple groups and identify differences in means across groups. It allows researchers to make comparisons and draw conclusions about the effects of independent variables on the dependent variable.
+
+
+
+## Chi-Square Tests
+
+Chi-square tests are a group of statistical tests used to analyze categorical data and examine whether there is a significant association between two or more categorical variables. These tests are based on the chi-square distribution and are commonly used in various fields, including psychology, sociology, biology, and business.
+
+Here's an overview of chi-square tests:
+
+1. **Types of Chi-Square Tests:**
+   - **Chi-Square Test for Independence (Contingency Table Test):** This test assesses whether there is a significant association between two categorical variables. It is used when both variables have two or more categories.
+   - **Chi-Square Test for Goodness of Fit:** This test compares observed frequencies of categorical data with expected frequencies to determine if they differ significantly from each other. It is used when analyzing one categorical variable with multiple categories.
+   - **Chi-Square Test for Homogeneity:** This test compares the distributions of categorical variables across multiple groups to determine if they come from the same population or have the same distribution.
+
+2. **Assumptions of Chi-Square Tests:**
+   - The observations must be independent.
+   - The categories of the variables must be mutually exclusive and exhaustive.
+   - The expected frequency for each cell in the contingency table should be at least 5 (for the Chi-Square Test for Independence and Goodness of Fit).
+
+3. **Hypotheses of Chi-Square Tests:**
+   - **Chi-Square Test for Independence:**
+     - Null Hypothesis (H0): There is no association between the two categorical variables.
+     - Alternative Hypothesis (H1): There is an association between the two categorical variables.
+   - **Chi-Square Test for Goodness of Fit:**
+     - Null Hypothesis (H0): The observed frequencies of the categories match the expected frequencies.
+     - Alternative Hypothesis (H1): The observed frequencies differ significantly from the expected frequencies.
+   - **Chi-Square Test for Homogeneity:**
+     - Null Hypothesis (H0): The distributions of the categorical variables are the same across groups.
+     - Alternative Hypothesis (H1): The distributions of the categorical variables differ across groups.
+
+4. **Calculation of Chi-Square Statistic:**
+   - The chi-square statistic measures the difference between the observed frequencies and the expected frequencies under the null hypothesis.
+   - It is calculated as the sum of the squared differences between observed and expected frequencies, divided by the expected frequencies.
+
+5. **Interpretation of Results:**
+   - The chi-square statistic follows a chi-square distribution with degrees of freedom determined by the number of categories in the variables.
+   - If the calculated chi-square statistic is greater than the critical value from the chi-square distribution (at a specified significance level), we reject the null hypothesis and conclude that there is a significant association between the variables or that the observed frequencies differ significantly from the expected frequencies.
+
+Chi-square tests are valuable tools for analyzing categorical data, identifying patterns, and testing hypotheses about relationships between variables. They provide insights into the structure and distribution of categorical variables and are widely used in statistical analysis.
 
 
 
 
+## Sampling Distributions
 
 
+Sampling distributions are distributions of statistics obtained from repeated sampling from a population. They provide valuable insights into the behavior of sample statistics and help make inferences about population parameters. Here's an overview of sampling distributions:
 
+1. **Purpose of Sampling Distributions:**
+   - Sampling distributions allow us to assess the variability and reliability of sample statistics.
+   - They provide a theoretical framework for understanding the properties of estimators and hypothesis tests.
+   - By studying sampling distributions, we can make inferences about population parameters based on sample statistics.
 
+2. **Types of Sampling Distributions:**
+   - **Sampling Distribution of the Sample Mean (Central Limit Theorem):** 
+     - When the sample size is sufficiently large (typically n ≥ 30), the sampling distribution of the sample mean becomes approximately normally distributed, regardless of the shape of the population distribution. This is known as the Central Limit Theorem (CLT).
+     - The mean of the sampling distribution of the sample mean (often denoted as μ̄) is equal to the population mean (μ), and the standard deviation of the sampling distribution (often denoted as σ/√n) is called the standard error of the mean.
+   - **Sampling Distribution of the Sample Proportion:** 
+     - For large samples, the sampling distribution of the sample proportion (p̂) follows an approximately normal distribution, centered around the population proportion (p) and with a standard deviation equal to the square root of p(1-p)/n.
+   - **Other Sampling Distributions:** 
+     - Sampling distributions of other statistics, such as sample variance, sample standard deviation, correlation coefficient, etc., have their own theoretical distributions (e.g., chi-square, t-distribution) under certain conditions.
 
+3. **Use of Sampling Distributions in Inference:**
+   - Sampling distributions serve as the basis for making statistical inferences about population parameters.
+   - They allow us to calculate confidence intervals, which provide ranges of plausible values for population parameters based on sample statistics.
+   - They also enable hypothesis testing, where we compare sample statistics to their expected distributions under the null hypothesis to draw conclusions about population parameters.
 
+4. **Implications of Sampling Distributions:**
+   - Larger sample sizes lead to sampling distributions that more closely approximate normal distributions, as indicated by the Central Limit Theorem.
+   - Understanding the properties of sampling distributions helps researchers assess the reliability of their findings and make valid statistical inferences.
+   - Sampling distributions are fundamental to the practice of statistics and underlie many statistical techniques and methods.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Overall, sampling distributions play a crucial role in statistical inference by providing a framework for understanding the behavior of sample statistics and making inferences about population parameters based on sample data.
 
 
 
