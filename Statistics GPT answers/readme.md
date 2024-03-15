@@ -84,6 +84,45 @@ Correlation, on the other hand, standardizes covariance to provide a more interp
 - A correlation of 0 indicates no linear relationship.
 Correlation is dimensionless and not affected by changes in the scale of the variables. Pearson correlation coefficient is the most common measure of correlation for continuous variables. The formula for Pearson correlation coefficient between two variables X and Y is:
 ![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/7b8554b6-6ccd-4d16-ac44-25873c09f6b0)
+
 Correlation is widely used in various fields, including finance, economics, psychology, and biology, to assess the strength and direction of relationships between variables.
 covariance measures the directional relationship between two variables, while correlation standardizes covariance to provide a more interpretable measure of the strength and direction of the relationship.
 
+# Types of Correlation
+
+## 1. Pearson Correlation (Linear Correlation):
+- Pearson correlation coefficient measures the linear relationship between two continuous variables.
+- It ranges from -1 to 1, where:
+    - 1 indicates a perfect positive linear relationship,
+    - -1 indicates a perfect negative linear relationship,
+    - 0 indicates no linear relationship.
+- It assumes that the variables have a normal distribution and linear relationship.
+- Pearson correlation is widely used in many fields, especially when examining the association between two continuous variables.
+
+## 2. Spearman Correlation (Rank Correlation):
+- Spearman correlation coefficient assesses the strength and direction of association between two ranked (ordinal) variables.
+- It is based on the ranks of the data rather than the actual values.
+- Spearman correlation is robust to outliers and non-linear relationships.
+- It is often used when the relationship between variables is monotonic but not necessarily linear, or when the data do not meet the assumptions of Pearson correlation.
+
+## 3. Kendall's Tau:
+- Kendall's Tau is another rank correlation coefficient that measures the association between two variables.
+- It also uses the ranks of the data and is suitable for ordinal or ranked data.
+- Kendall's Tau is particularly useful when dealing with small sample sizes.
+- It is less sensitive to outliers compared to Pearson correlation.
+
+## 4. Point-Biserial Correlation:
+- Point-biserial correlation coefficient measures the association between a dichotomous variable (binary) and a continuous variable.
+- It is used when one variable is continuous and the other is dichotomous.
+- Point-biserial correlation is a special case of Pearson correlation.
+- It is often used in studies involving experimental and control groups or in psychometrics.
+
+## 5. Phi Coefficient:
+- Phi coefficient is a measure of association between two dichotomous variables.
+- It is similar to Pearson correlation but is specifically used when both variables are binary.
+- Phi coefficient ranges from -1 to 1, with 0 indicating no association.
+- These are the main types of correlations commonly used in statistics.
+-
+- Choosing the appropriate correlation coefficient depends on the nature of the variables being analyzed and the assumptions underlying the data. It's essential to consider the characteristics of the data and the research question when selecting a correlation measure.
+
+#
