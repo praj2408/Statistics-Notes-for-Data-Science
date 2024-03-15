@@ -39,24 +39,24 @@ Snowball sampling is a non-probabilistic sampling method where existing study su
 # Scale of Measurements
 
 ## 1. Nominal Scale:
-The nominal scale is the simplest level of measurement.
-It categorizes data into distinct categories or groups with no inherent order or ranking.
-Examples include gender (male, female), marital status (single, married, divorced), and types of cars (sedan, SUV, truck).
-Nominal data can be represented using labels, but mathematical operations such as addition and subtraction are not meaningful.
-Statistical analysis for nominal data typically involves frequency counts and percentages.
+- The nominal scale is the simplest level of measurement.
+- It categorizes data into distinct categories or groups with no inherent order or ranking.
+- Examples include gender (male, female), marital status (single, married, divorced), and types of cars (sedan, SUV, truck).
+- Nominal data can be represented using labels, but mathematical operations such as addition and subtraction are not meaningful.
+- Statistical analysis for nominal data typically involves frequency counts and percentages.
 
 ## 2. Ordinal Scale:
-The ordinal scale ranks data into ordered categories or levels, but the intervals between the categories are not uniform or measurable.
-While there is a meaningful order, the differences between categories are not necessarily equal.
-Examples include ranking satisfaction levels (very dissatisfied, dissatisfied, neutral, satisfied, very satisfied) or educational attainment (high school diploma, bachelor's degree, master's degree, Ph.D.).
-Ordinal data allow for comparisons of relative magnitude but do not support precise quantification of differences.
-Statistical analysis for ordinal data includes non-parametric tests such as the Mann-Whitney U test or Spearman's rank correlation.
+- The ordinal scale ranks data into ordered categories or levels, but the intervals between the categories are not uniform or measurable.
+- While there is a meaningful order, the differences between categories are not necessarily equal.
+- Examples include ranking satisfaction levels (very dissatisfied, dissatisfied, neutral, satisfied, very satisfied) or educational attainment (high school diploma, bachelor's degree, master's degree, Ph.D.).
+- Ordinal data allow for comparisons of relative magnitude but do not support precise quantification of differences.
+- Statistical analysis for ordinal data includes non-parametric tests such as the Mann-Whitney U test or Spearman's rank correlation.
 
 ## 3. Interval Scale:
-The interval scale has ordered categories with uniform intervals between them, but there is no true zero point.
-Intervals on the scale represent equal differences in the underlying attribute being measured.
-Examples include temperature measured in Celsius or Fahrenheit, where the difference between 20°C and 30°C is the same as the difference between 30°C and 40°C.
-Interval data support addition and subtraction operations but do not have a meaningful zero point.
+- The interval scale has ordered categories with uniform intervals between them, but there is no true zero point.
+- Intervals on the scale represent equal differences in the underlying attribute being measured.
+- Examples include temperature measured in Celsius or Fahrenheit, where the difference between 20°C and 30°C is the same as the difference between 30°C and 40°C.
+- Interval data support addition and subtraction operations but do not have a meaningful zero point.
 Statistical analysis for interval data includes parametric tests such as t-tests and analysis of variance (ANOVA).
 
 ## 4. Ratio Scale:
@@ -65,4 +65,5 @@ In addition to equal intervals, ratio scales allow for meaningful ratios between
 Examples include height, weight, time, and money.
 Ratio data support all mathematical operations, including multiplication and division.
 Statistical analysis for ratio data includes parametric tests similar to those for interval data, as well as descriptive statistics such as means and standard deviations.
+
 
