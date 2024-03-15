@@ -122,7 +122,228 @@ covariance measures the directional relationship between two variables, while co
 - It is similar to Pearson correlation but is specifically used when both variables are binary.
 - Phi coefficient ranges from -1 to 1, with 0 indicating no association.
 - These are the main types of correlations commonly used in statistics.
--
-- Choosing the appropriate correlation coefficient depends on the nature of the variables being analyzed and the assumptions underlying the data. It's essential to consider the characteristics of the data and the research question when selecting a correlation measure.
+  
+Choosing the appropriate correlation coefficient depends on the nature of the variables being analyzed and the assumptions underlying the data. It's essential to consider the characteristics of the data and the research question when selecting a correlation measure.
 
-#
+# Descriptive Statistics
+
+1. Measures of Central Tendency
+2. Measures of Dispersion
+3. Frequency Distributions
+4. Graphical Presentation of Data
+5. Measures of Position
+6. Probability Distributions
+7. Summarizing Bivariate Data
+
+## 1. Measures of Central Tendency
+
+### 1. Mean:
+- The mean is the most common measure of central tendency.
+- It is calculated by summing all the values in the dataset and dividing by the number of observations.
+- The formula for the mean is:
+![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/79a49731-08e6-4e9b-821c-254a0758fa72)
+- The mean is sensitive to extreme values (outliers) and may not be representative of the data if the distribution is skewed.
+
+
+### 2. Median:
+
+- The median is the middle value of a dataset when the values are arranged in ascending or descending order.
+- If there is an odd number of observations, the median is the middle value.
+- If there is an even number of observations, the median is the average of the two middle values.
+- The median is less affected by outliers and extreme values compared to the mean and is often used when the data is skewed or contains outliers.
+
+### 3. Mode:
+
+- The mode is the value that occurs most frequently in the dataset.
+- A dataset may have one mode (unimodal), two modes (bimodal), or more than two modes (multimodal), or it may have no mode if all values occur with the same frequency.
+- The mode is useful for categorical and nominal data, but it can also be applied to numerical data.
+- Unlike the mean and median, the mode can be determined for any type of distribution.
+
+
+## 2. Measures of Dispersion
+Measures of Dispersion, also known as measures of variability or spread, quantify the extent to which the values in a dataset differ from the central tendency. They provide information about the spread, scatter, or variability of the data points. The main measures of dispersion include:
+
+- Range
+- Variance
+- Standard Deviation
+- Interquartile Range (IQR)
+
+### 1. Range:
+
+- The range is the simplest measure of dispersion.
+- It is calculated as the difference between the maximum and minimum values in the dataset.
+- While easy to compute, the range may be influenced by outliers and is not robust to extreme values.
+
+### 2. Variance:
+
+- Variance measures the average squared deviation of each data point from the mean.
+- It provides a measure of the spread of the data around the mean.
+![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/b7994574-3337-4ef9-ae90-3a9a8f9905f2)
+- Variance is sensitive to the units of measurement and can be difficult to interpret due to the squared values.
+### 3. Standard Deviation:
+- The standard deviation is the square root of the variance.
+- It measures the average deviation of each data point from the mean.
+![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/bb8f7cc8-5a53-4595-b519-485b237b63be)
+- Standard deviation is widely used because it is in the same units as the original data and provides a measure of the typical distance from the mean.
+
+### 4. Interquartile Range (IQR):
+
+- The interquartile range is a measure of the spread of the middle 50% of the data.
+- It is calculated as the difference between the third quartile (Q3) and the first quartile (Q1).
+- The IQR is robust to outliers and is often used to describe the variability of skewed distributions.
+
+These measures of dispersion complement measures of central tendency by providing information about the variability or spread of the data. They are essential for understanding the distribution and characteristics of a dataset and are used in various statistical analyses and data visualization techniques.
+
+
+## 3. Frequency Distributions
+Frequency distributions are a way of organizing and summarizing data by displaying the number of times each value occurs in a dataset. This helps to understand the distribution or pattern of the data and identify any trends or outliers. The main components of a frequency distribution include:
+
+### 1. Class Intervals or Categories:
+
+Class intervals are the ranges into which the data values are grouped.
+They divide the range of data values into smaller, manageable intervals or categories.
+Class intervals should be mutually exclusive and collectively exhaustive, meaning that each data point falls into exactly one interval, and all data points are accounted for.
+
+### 2. Frequency:
+
+Frequency refers to the number of times a value or data point occurs within each class interval.
+It represents the count or tally of observations falling within each interval.
+
+### 3. Relative Frequency:
+
+Relative frequency is the proport ion or percentage of observations within each class interval relative to the total number of observations.
+It is calculated by dividing the frequency of each interval by the total number of observations and multiplying by 100 to express it as a percentage.
+
+### 4. Cumulative Frequency:
+
+Cumulative frequency is the running total of frequencies as you move through the intervals from the lowest to the highest.
+It provides information about the number of observations below a certain value or within a certain range.
+Frequency distributions can be presented in various formats, including:
+
+Frequency Table: A table that lists the class intervals, frequencies, relative frequencies, and cumulative frequencies.
+Histogram: A graphical representation of the frequency distribution, where the class intervals are shown on the x-axis and the frequencies are represented by the heights of the bars.
+Frequency Polygon: A line graph that connects the midpoints of each class interval with lines to show the distribution of frequencies.
+Cumulative Frequency Curve (Ogive): A graph that plots cumulative frequencies against the upper or lower class boundaries to display the cumulative distribution of the data.
+
+Frequency distributions are fundamental in descriptive statistics as they provide a concise summary of the dataset's distribution and allow for visual interpretation of the data's patterns and characteristics.
+
+## 4. Graphical Presentation of Data
+
+Graphical presentation of data involves representing data visually using various types of graphs and charts. It is an essential aspect of statistics and data analysis because visualizing data can help reveal patterns, trends, and relationships that may not be apparent from numerical summaries alone. Some common types of graphical presentations of data include:
+
+**Histograms:** Histograms are used to display the distribution of continuous data by dividing the data into intervals (bins) and plotting the frequency or relative frequency of observations within each interval as bars.
+
+**Bar Charts:** Bar charts are used to display the distribution of categorical or discrete data. They consist of rectangular bars, with the length of each bar representing the frequency or relative frequency of observations in each category.
+
+**Pie Charts:** Pie charts are used to represent the proportions or percentages of different categories within a dataset. Each category is represented by a slice of the pie, with the size of the slice proportional to the percentage of the whole.
+
+**Line Graphs:** Line graphs are used to display trends or changes in data over time or across different conditions. They consist of points connected by lines, with the x-axis representing the independent variable (e.g., time) and the y-axis representing the dependent variable.
+
+**Scatter Plots**: Scatter plots are used to display the relationship between two continuous variables. Each data point is plotted as a point on the graph, with one variable represented on the x-axis and the other variable represented on the y-axis.
+
+**Box Plots** (Box-and-Whisker Plots): Box plots are used to display the distribution of a continuous variable and provide information about central tendency, dispersion, and skewness. The box represents the interquartile range (IQR), with the median line inside the box and the whiskers extending to the minimum and maximum values or to a certain distance from the quartiles.
+
+**Histograms:** Histograms are used to display the distribution of continuous data by dividing the data into intervals (bins) and plotting the frequency or relative frequency of observations within each interval as bars.
+
+**Heatmaps:** Heatmaps are used to represent the intensity or density of data values in a matrix format, with colors indicating the magnitude of the values.
+
+These are just a few examples of graphical presentations of data. Choosing the appropriate type of graph or chart depends on the nature of the data and the specific objectives of the analysis. Graphical presentation of data enhances data exploration, communication, and interpretation, making it an essential tool in statistical analysis.
+
+
+
+## 5. Probability Distributions
+
+Probability distributions are mathematical functions that describe the likelihood of observing different outcomes of a random variable. They are essential tools in statistics and probability theory, used to model uncertainty and variability in various phenomena. Some of the main probability distributions include:
+
+### 1. Discrete Probability Distributions:
+
+**Bernoulli Distribution:** Models the probability of success (1) or failure (0) in a single trial of a binary experiment.
+![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/d6df4b1a-33e5-49aa-9ba9-3381271652e5)
+
+**Binomial Distribution:** Describes the probability of obtaining a certain number of successes in a fixed number of independent Bernoulli trials.
+![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/7a23d94b-2f17-4447-b018-2f73509a6c47)
+
+**Poisson Distribution:** Models the number of events occurring in a fixed interval of time or space, given a known average rate of occurrence.
+  
+### 2. Continuous Probability Distributions:
+
+- **Uniform Distribution:** Represents a constant probability over a range of values, with all outcomes equally likely.
+- **Normal Distribution (Gaussian Distribution):** One of the most widely used distributions, characterized by a symmetric bell-shaped curve. It is governed by two parameters: the mean (μ) and the standard deviation (σ).
+- **Exponential Distribution:** Models the time until an event occurs in a continuous process, such as the waiting time between successive events in a Poisson process.
+- **Gamma Distribution:** Generalizes the exponential distribution and is used to model the waiting time for multiple events to occur in a continuous process.
+- **Chi-Square Distribution:** Arises in statistical hypothesis testing and is used to model the distribution of the sum of squared standard normal deviates.
+- **Student's t-Distribution:** Used in hypothesis testing for small sample sizes when the population standard deviation is unknown.
+- **F-Distribution:** Arises in the analysis of variance (ANOVA) and is used to compare the variances of two or more populations.
+
+These probability distributions have different shapes, parameters, and applications. Understanding them is crucial for performing statistical analyses, making predictions, and drawing conclusions in various fields such as science, engineering, finance, and social sciences.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
