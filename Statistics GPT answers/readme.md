@@ -60,10 +60,30 @@ Snowball sampling is a non-probabilistic sampling method where existing study su
 Statistical analysis for interval data includes parametric tests such as t-tests and analysis of variance (ANOVA).
 
 ## 4. Ratio Scale:
-The ratio scale has all the properties of the interval scale but also has a true zero point, indicating the absence of the measured attribute.
-In addition to equal intervals, ratio scales allow for meaningful ratios between values.
-Examples include height, weight, time, and money.
-Ratio data support all mathematical operations, including multiplication and division.
-Statistical analysis for ratio data includes parametric tests similar to those for interval data, as well as descriptive statistics such as means and standard deviations.
+- The ratio scale has all the properties of the interval scale but also has a true zero point, indicating the absence of the measured attribute.
+- In addition to equal intervals, ratio scales allow for meaningful ratios between values.
+- Examples include height, weight, time, and money.
+- Ratio data support all mathematical operations, including multiplication and division.
+- Statistical analysis for ratio data includes parametric tests similar to those for interval data, as well as descriptive statistics such as means and standard deviations.
 
+
+# Co-variance and Co-relation
+Covariance and correlation are both measures used to quantify the relationship between two variables in statistics, particularly in the field of multivariate analysis. While they are related concepts, they serve slightly different purposes and have different interpretations.
+
+## Covariance:
+Covariance measures the degree to which two variables change together. It indicates the direction of the linear relationship between the variables. A positive covariance indicates that the two variables tend to increase or decrease together, while a negative covariance indicates that one variable tends to increase as the other decreases.
+
+However, covariance alone doesn't provide a clear indication of the strength or magnitude of the relationship. It's influenced by the scale of the variables, making interpretation challenging. The formula for covariance between two variables X and Y, based on a sample, is:
+![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/9e8341e4-a749-47fe-ba5c-9751de08520c)
+
+## Correlation:
+Correlation, on the other hand, standardizes covariance to provide a more interpretable measure of the relationship between two variables. It ranges between -1 and 1, where:
+
+- A correlation of 1 indicates a perfect positive linear relationship.
+- A correlation of -1 indicates a perfect negative linear relationship.
+- A correlation of 0 indicates no linear relationship.
+Correlation is dimensionless and not affected by changes in the scale of the variables. Pearson correlation coefficient is the most common measure of correlation for continuous variables. The formula for Pearson correlation coefficient between two variables X and Y is:
+![image](https://github.com/praj2408/Statistics-Notes-for-Data-Science.-Practical-and-Theory/assets/70437673/7b8554b6-6ccd-4d16-ac44-25873c09f6b0)
+Correlation is widely used in various fields, including finance, economics, psychology, and biology, to assess the strength and direction of relationships between variables.
+covariance measures the directional relationship between two variables, while correlation standardizes covariance to provide a more interpretable measure of the strength and direction of the relationship.
 
